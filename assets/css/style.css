@@ -1,0 +1,199 @@
+* {
+   font-family: "Montserrat", sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #333;
+}
+
+html,
+body {
+   height: auto;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+html {
+   background: linear-gradient(180deg, #ea02ff 0%, #0097ff 100%);
+}
+
+input:focus {
+   outline: none;
+}
+
+#register-container {
+   max-width: 900px;
+   min-height: 70vh;
+   margin: 2rem auto;
+   display: flex;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner {
+   background: url('../images/bg.jpg');
+   background-size: cover;
+   background-position: center;
+   width: 50%;
+}
+
+#banner-layer {
+   background-color: rgba(25, 11, 122, 0.7);
+   height: 100%;
+   padding: 2rem;
+   display: flex;
+   align-items: center;
+}
+
+#register-banner h1 {
+   font-size: 4rem;
+   margin-bottom: 1.5rem;
+   color: #fff;
+   word-spacing: 50rem;
+}
+
+#register-form {
+   background-color: #fdfdfd;
+   padding: 2rem;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+}
+
+#register-form h2 {
+   text-align: center;
+   margin-bottom: .4rem;
+   font-size: 2.2rem;
+}
+
+#register-form p {
+   text-align: center;
+   margin-bottom: 1.5rem;
+   color: #aaa;
+   font-size: 0.8rem;
+}
+
+.form-control {
+   margin-bottom: 1rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.form-control label {
+   font-weight: bold;
+}
+
+.form-control input {
+   border: none;
+   border-bottom: 1px solid #aaa;
+   padding: 0.4rem 0;
+}
+
+#generate-password {
+   font-weight: bold;
+   cursor: pointer;
+   transition: .3s;
+}
+
+#generate-password:hover {
+   color: #0099ff;
+}
+
+#generate-password-config {
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+   border: 1px solid #aaa;
+   padding: .5rem 1rem;
+   margin-bottom: 1rem;
+   display: none;
+}
+
+.form-check{
+   margin-top: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.form-config {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.form-config label {
+   font-weight: bold;
+   font-size: .9rem;
+}
+
+#caracteres {
+   width: 7.5%;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+   appearance: none;
+}
+
+.divbtnCreatePassword{
+   display: flex;
+   justify-content: center;
+}
+
+#btnCreatePassword{
+   width: 40%;
+   color: #fff;
+   border: none;
+   background-color: #0099ff;
+   padding: 1rem;
+   border-radius:2rem;
+   cursor: pointer;
+}
+
+#register-form #generated-password {
+   border: 1px solid #0099ff;
+   border-radius: 4px;
+   font-weight: bold;
+   font-size: 1.2rem;
+   padding: .4rem;
+   color: #333;
+   text-align: center;
+   margin-bottom: .8rem;
+   display: none;
+}
+
+#btnCopiarSenha{
+   margin-top: 1rem;
+   background-color: #81d340;
+   color: #fff;
+   opacity: .8;
+   border: none;
+   border-radius: 2rem;
+   padding: .4rem 1.2rem;
+   max-width: 150px;
+   cursor: pointer;
+}
+
+#register-form #generated-password p {
+   color: #81d340;
+   margin-bottom: 0.5rem;
+}
+
+#register-form input[type="submit"] {
+   background-color: #81d340;
+   color: #fff;
+   opacity: .8;
+   border: none;
+   border-radius: 2rem;
+   padding: .8rem 1.2rem;
+   max-width: 150px;
+   cursor: pointer;
+   align-self: flex-end;
+   transition: .4s;
+}
+
+#register-form input[type="submit"]:hover {
+   opacity: 1;
+}
